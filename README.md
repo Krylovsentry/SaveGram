@@ -1,2 +1,2 @@
 # SaveGram
-simple google chrome extension
+Simple google chrome extension
