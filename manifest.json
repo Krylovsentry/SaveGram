@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+
+  "name": "Download pictures from Instagram",
+  "description": "Let you download pictures from Instagram",
+  "version": "2.0",
+
+  "content_scripts": [{
+    "matches": ["*://www.instagram.com/*"],
+    "js": ["instagram_inject.js"],
+    "css": ["instagram_styles.css"]
+  }]
+}
