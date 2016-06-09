@@ -43,7 +43,6 @@
 
         var id = img.getAttribute('id');
         if (document.getElementById('link_' + id)){
-
            return false;
         } else return true;
 
@@ -53,9 +52,9 @@
 
         var images = document.getElementsByTagName('img');
         var id = images[1].getAttribute('id');
-        var number = id.substr(7);
 
-        if (id != "null") {
+        if (id != null) {
+            var number = id.substr(7);
             for (var i = +number; i < 1000 + +number; i++) {
 
                 if (document.getElementById('pImage_' + i) != null) {

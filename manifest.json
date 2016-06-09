@@ -1,13 +1,23 @@
 {
   "manifest_version": 2,
 
-  "name": "Download pictures from Instagram",
-  "description": "Let you download pictures from Instagram",
+  "name": "SaveGram",
+  "description": "Let's you download pictures from Instagram",
   "version": "2.0",
-
+  "icons": {
+    "128": "save.png"
+  },
+  "browser_action": {
+    "default_title":"SaveGram"
+  },
   "content_scripts": [{
     "matches": ["*://www.instagram.com/*"],
     "js": ["instagram_inject.js"],
     "css": ["instagram_styles.css"]
-  }]
+  }],
+  "permissions": [
+    "tabs",
+    "activeTab"
+  ]
+
 }
