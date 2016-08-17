@@ -1,9 +1,10 @@
 /*
  * Created by ankr0416 on 13.05.2016.
  */
-(function () {
+chrome.browserAction.onClicked.addListener((function () {
 
 
+   
 
     var articles = document.getElementsByTagName('a');
 
@@ -51,24 +52,28 @@
     function createNewImg() {
 
         var images = document.getElementsByTagName('img');
-        var id = images[1].getAttribute('id');
 
-        if (id != null) {
-            var number = id.substr(7);
-            for (var i = +number; i < 1000 + +number; i++) {
 
-                if (document.getElementById('pImage_' + i) != null) {
+        for(var j = 0 ; j < images.length; j ++) {
 
-                    var img = document.getElementById('pImage_' + i);
-                    if (checkOldImg(img)) {
+            var id = images[j].getAttribute('id');
+            if (id != null) {
+                var number = id.substr(7);
 
-                        img.parentNode.parentNode.parentNode.parentNode.appendChild(createLink(img, i));
 
+                    if (document.getElementById('pImage_' + number) != null) {
+
+                        var img = document.getElementById('pImage_' + number);
+                        if (checkOldImg(img)) {
+
+                            img.parentNode.parentNode.parentNode.parentNode.appendChild(createLink(img, i));
+
+                        }
                     }
-                }
+
+
+
             }
-
-
         }
     }
 
@@ -78,4 +83,4 @@
 
 
 
-})();
+})());

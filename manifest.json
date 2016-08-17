@@ -3,7 +3,7 @@
 
   "name": "SaveGram",
   "description": "Let's you download pictures from Instagram",
-  "version": "2.0",
+  "version": "2.2",
   "icons": {
     "128": "save.png"
   },
