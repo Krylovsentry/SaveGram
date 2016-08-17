@@ -1,10 +1,9 @@
 /*
  * Created by ankr0416 on 13.05.2016.
  */
-chrome.browserAction.onClicked.addListener((function () {
+(function () {
 
 
-   
 
     var articles = document.getElementsByTagName('a');
 
@@ -83,4 +82,4 @@ chrome.browserAction.onClicked.addListener((function () {
 
 
 
-})());
+})();
