@@ -1,14 +1,14 @@
-.downloadLink {
+.download_link {
     position: relative;
     cursor: copy;
     border: 1px dotted #CED8DB;
     border-radius: 2px;
     padding: 0 4px;
     height: 18px;
-    margin: 5px;
+    margin: 0 auto;
 }
 
-.downloadLink:hover {
+.download_link:hover {
     background-color: #d0e6ff;
     border-color: #9DA5AE;
 }
